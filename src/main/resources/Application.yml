@@ -1,0 +1,20 @@
+logging:
+  level:
+    org.openqa.selenium: debug
+    org.springframework: info
+
+webdriver:
+  #Service 是否远程
+  isRemote: false
+  #运行浏览器
+  browser: CHROME
+  #webdriver驱动地址
+  service:
+    location: chromedriver.exe
+    #启动service端口
+    port: 1411
+  capabilities:
+    javascriptEnabled: true
+    takesScreenshot: true
+    cssSelectorsEnabled: true
+  listener: org.openqa.selenium.support.events.AbstractWebDriverEventListener
